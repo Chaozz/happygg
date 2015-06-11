@@ -1,0 +1,3 @@
+[submodule "GUI-programs/ChessQ"]
+	path = GUI-programs/ChessQ
+	url = https://github.com/walker8088/ChessQ.git
