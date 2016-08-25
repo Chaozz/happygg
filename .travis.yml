@@ -8,6 +8,7 @@ before_install:
 install:
     # Install CMake
     - sudo apt-get install cmake
+    - sudo apt-get update -qq
 
 script:
     - cmake .
