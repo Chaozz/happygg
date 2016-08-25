@@ -7,3 +7,7 @@ CMakeCache.txt
 Testing/
 cmake_install.cmake
 happygg
+CTestTestfile.cmake
+src_tests/CTestTestfile.cmake
+src_tests/basic_tests/CTestTestfile.cmake
+src_tests/lib/googletest/CTestTestfile.cmake
