@@ -1,10 +1,13 @@
 language: cpp
 compiler: gcc
 
-before_install:
-    # Add a PPA with a newer CMake as Travis only supports v2.8.7.
-    - sudo add-apt-repository --yes ppa:kalakris/cmake
-    - sudo apt-get update -qq
+addons:
+  apt:
+    sources:
+      - george-edison55-precise-backports # cmake 3.2.3 / doxygen 1.8.3
+    packages:
+      - cmake
+      - cmake-data
 
 install:
     # Install CMake
