@@ -4,3 +4,4 @@
 .idea
 /win-src/debug
 /win-src/release
+/CMakeFiles
