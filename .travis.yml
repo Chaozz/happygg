@@ -5,9 +5,7 @@ install:
     # Install CMake
     - sudo apt-get install cmake
 
-before_script:
+script:
     - cmake .
     - make
-
-script:
     - ctest -VV
