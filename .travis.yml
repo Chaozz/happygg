@@ -4,11 +4,11 @@ compiler: gcc
 before_install:
     # Add a PPA with a newer CMake as Travis only supports v2.8.7.
     - sudo add-apt-repository --yes ppa:kalakris/cmake
+    - sudo apt-get update -qq
 
 install:
     # Install CMake
     - sudo apt-get install cmake
-    - sudo apt-get update -qq
 
 script:
     - cmake .
