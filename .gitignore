@@ -1,5 +1,6 @@
 *.exe
 *.dll
 *.log
+.idea
 /win-src/debug
 /win-src/release

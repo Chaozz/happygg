@@ -248,7 +248,8 @@ bool Position::IsLegal(int move)const
 			return false;
 		}
 		pin_position=start_position+num_delta;
-		while(pin_position!=dst_position&&board_[pin_position]==0){
+		while(Move::IsInBoard(pin_position+num_delta)&&pin_position!=dst_position&&board_[pin_position]==0){
+			//printf("pin: %d\n", pin_position);
 			pin_position+=num_delta;
 		}
 		if(pin_position==dst_position){

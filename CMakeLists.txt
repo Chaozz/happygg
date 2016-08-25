@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.1)
+project(happygg)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+
+set(SOURCE_FILES happygg.cpp)
+
+add_executable(happygg ${SOURCE_FILES})
+
+include_directories(src)
+
+add_subdirectory(src)
+add_subdirectory(src_tests)
+
+target_link_libraries(happygg src)
