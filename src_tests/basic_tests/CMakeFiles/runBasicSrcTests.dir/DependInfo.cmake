@@ -7,7 +7,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/chaoz/Documents/project/ happygg_github/happygg/src_tests/basic_tests/basic_check.cpp" "/Users/chaoz/Documents/project/ happygg_github/happygg/src_tests/basic_tests/CMakeFiles/runBasicSrcTests.dir/basic_check.cpp.o"
   "/Users/chaoz/Documents/project/ happygg_github/happygg/src_tests/basic_tests/search_test.cpp" "/Users/chaoz/Documents/project/ happygg_github/happygg/src_tests/basic_tests/CMakeFiles/runBasicSrcTests.dir/search_test.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "AppleClang")
+set(CMAKE_CXX_COMPILER_ID "Clang")
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
