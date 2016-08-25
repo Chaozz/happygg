@@ -1,5 +1,5 @@
 language: cpp
-compiler: gcc
+compiler: clang
 
 before_install:
     # Add g++4.8 PPA
