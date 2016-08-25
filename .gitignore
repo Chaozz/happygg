@@ -2,6 +2,8 @@
 *.dll
 *.log
 .idea
-/win-src/debug
-/win-src/release
-/CMakeFiles
+CMakeFiles/
+CMakeCache.txt
+Testing/
+cmake_install.cmake
+happygg

@@ -5,3 +5,6 @@ add_executable(runBasicSrcTests
 
 target_link_libraries(runBasicSrcTests gtest gtest_main)
 target_link_libraries(runBasicSrcTests src)
+
+add_test(NAME runBasicSrcTests
+         COMMAND runBasicSrcTests)

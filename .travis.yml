@@ -1,0 +1,6 @@
+language: cpp
+compiler: gcc
+
+install:
+    # Install CMake
+    - sudo apt-get install cmake
