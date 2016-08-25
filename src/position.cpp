@@ -255,7 +255,7 @@ bool Position::IsLegal(int move)const
 		if(pin_position==dst_position){
 			return dst_piece==0||(start_piece-self_piece==PIECE_ROOK);
 		}
-		else if(dst_piece!=0&&(start_piece-self_piece==PIECE_CANNON)){
+		else if(Move::IsInBoard(pin_position+num_delta)&&dst_piece!=0&&(start_piece-self_piece==PIECE_CANNON)){
 			pin_position+=num_delta;
 			while(pin_position!=dst_position&&board_[pin_position]==0){
 				pin_position+=num_delta;

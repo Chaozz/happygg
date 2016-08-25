@@ -72,11 +72,9 @@ TEST_F(SearchFixture, move_check) {
     //printf("%d", chess_search->ThinkMoveDepth(7));
     //chess_search->ThinkMoveDepth(7);
     EXPECT_EQ(42436, chess_search->ThinkMoveDepth(7));
-    /*
     const char *test_position2 = "position fen rnbakabnr/9/1c5c1/p1p1p1p1p/9/9/P1P1P1P1P/1C5C1/9/RNBAKABNR w - - 0 1 moves b0c2 c6c5";
     ucci_comm_struct test_struct2;
     StringToUcciStruct(test_position2, &test_struct2);
     chess_search->position_.FenToBoard(test_struct2.position.fen_str,test_struct2.position.move_num,test_struct2.position.coord_list);
     EXPECT_EQ(43466, chess_search->ThinkMoveDepth(7));
-     */
 }
