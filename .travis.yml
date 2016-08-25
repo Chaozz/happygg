@@ -1,11 +1,6 @@
 language: cpp
 compiler: clang
 
-before_install:
-    # Add g++4.8 PPA
-    - if [ "$CXX" == "g++" ]; then sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test; fi
-    - sudo apt-get update -qq
-
 #addons:
 #    apt:
 #      sources:
@@ -13,12 +8,6 @@ before_install:
 #      packages:
 #        - cmake
 #        - cmake-data
-
-install:
-    # Install g++4.8
-    - if [ "$CXX" = "g++" ]; then sudo apt-get install -qq gcc-4.8 g++-4.8; fi
-    # Compile with g++ 4.8 when rather than the default g++
-    - if [ "$CXX" = "g++" ]; then sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-4.8 90; fi
 
 
 script:
