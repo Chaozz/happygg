@@ -7,7 +7,6 @@
 int main(int argc, char *argv[]) {
     ucci_comm_enum ucci_enum = UCCI_COMM_NONE;
     ucci_comm_struct ucci_struct;
-    //HashTable ht;
     if (boot_line() == UCCI_COMM_UCCI) {
         Search chess_search;
         printf("id name happygg\n");
@@ -44,19 +43,6 @@ int main(int argc, char *argv[]) {
 
                     break;
                 case UCCI_COMM_POSITION:
-                    /*
-                    printf("%s\n", ucci_struct.position.fen_str);
-                        printf("%d\n", ucci_struct.position.move_num);
-                        for (int k = 0; k<ucci_struct.position.move_num; k++)
-                        {
-                            char * str = (char *)(&(ucci_struct.position.coord_list[k]));
-                            printf("%c", str[0]);
-                            printf("%c", str[1]);
-                            printf("%c", str[2]);
-                            printf("%c\n", str[3]);
-                        }
-                    chess_search.position_.FenToBoard(ucci_struct.position.fen_str,ucci_struct.position.move_num,ucci_struct.position.coord_list);
-                    */
                     fflush(stdout);
                     break;
                 case UCCI_COMM_GO:
